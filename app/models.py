@@ -6,3 +6,5 @@ class SentimentRequest(BaseModel):
 class SentimentResponse(BaseModel):
     label: str
     score: float
+    explanation: str
+

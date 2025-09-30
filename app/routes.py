@@ -6,5 +6,4 @@ router = APIRouter()
 
 @router.post("/sentiment", response_model=SentimentResponse)
 def sentiment_endpoint(request: SentimentRequest):
-    result = analyze_sentiment(request.text)
-    return result
+    return analyze_sentiment(request.text)
